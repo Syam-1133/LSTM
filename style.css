@@ -1,0 +1,200 @@
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.stApp {
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: white !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem !important;
+}
+
+/* Card Styles */
+.input-card, .info-card, .examples-card, .tech-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-card h3, .info-card h3, .examples-card h4, .tech-card h4 {
+    color: #6e48aa;
+    margin-top: 0;
+}
+
+/* Text Input */
+.stTextArea textarea {
+    border-radius: 8px !important;
+    border: 2px solid #ddd !important;
+    padding: 15px !important;
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #9d50bb !important;
+    box-shadow: 0 0 0 2px rgba(157, 80, 187, 0.2) !important;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Result Card */
+.result-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.input-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.prediction {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.next-word {
+    color: #6e48aa;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Info Steps */
+.info-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.step-text {
+    flex: 1;
+}
+
+/* Examples List */
+.examples-card ul {
+    padding-left: 20px;
+}
+
+.examples-card li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Tech Badges */
+.tech-badge {
+    display: inline-block;
+    background-color: #e9e0f1;
+    color: #6e48aa;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* More Info Section */
+.more-info {
+    background: #f0e5ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.more-info p {
+    font-weight: bold;
+    color: #6e48aa;
+    margin-bottom: 10px;
+}
+
+.more-info ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem !important;
+    }
+    
+    .stTextArea textarea {
+        height: 120px !important;
+    }
+}
